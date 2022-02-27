@@ -5,3 +5,9 @@
   font-weight: 700;
   color: var(--black);
 }
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black);
+}
