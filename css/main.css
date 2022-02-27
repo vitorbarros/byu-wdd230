@@ -13,14 +13,13 @@ body {
 
 .container {
   max-width: 1280px;
-  width: 100%;
   display: block;
   margin: 0 auto;
 }
 
 .title-container {
   background-color: var(--blue);
-  padding: 20px;
+  padding: 40px 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-top: 20px;
@@ -30,7 +29,8 @@ body {
   font-size: 36px;
   font-weight: 700;
   padding: 0;
-  color: var(--white)
+  color: var(--white);
+  margin: 0 20px;
 }
 
 .page-subtitle {
@@ -66,7 +66,7 @@ body {
 
 .footer-container {
   background-color: var(--blue);
-  padding: 40px 20px;
+  padding: 40px 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   margin-bottom: 20px;
@@ -76,7 +76,7 @@ body {
 .footer-container p {
   font-size: 18px;
   font-weight: 400;
-  padding: 0;
+  padding: 0 20px;
   color: var(--white);
   margin: 0
 }

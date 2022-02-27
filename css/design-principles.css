@@ -1,0 +1,7 @@
+.container h2 {
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--black);
+}
