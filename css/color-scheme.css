@@ -1,0 +1,20 @@
+.color-schema p {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+#black {
+  color: var(--black);
+}
+
+#black-light {
+  color: var(--black-light);
+}
+
+#purple {
+  color: var(--purple);
+}
+
+#blue {
+  color: var(--blue);
+}
