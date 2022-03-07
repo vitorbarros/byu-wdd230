@@ -1,0 +1,26 @@
+@media (max-width: 640px) {
+  img {
+    max-width: 80px;
+    margin-right: 10px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    padding: 15px;
+  }
+}

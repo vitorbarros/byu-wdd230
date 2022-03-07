@@ -1,0 +1,8 @@
+@media (max-width: 1007px) {
+  img {
+    max-width: 100px;
+  }
+  .page-title {
+    font-size: 30px;
+  }
+}
