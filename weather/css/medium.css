@@ -5,4 +5,13 @@
   .page-title {
     font-size: 30px;
   }
+  .forecast-card {
+    max-width: 120px;
+    width: 100%;
+    height: 120px;
+  }
+
+  .forecast-card img {
+    max-width: 40px;
+  }
 }

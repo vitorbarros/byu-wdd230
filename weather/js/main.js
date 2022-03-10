@@ -12,9 +12,56 @@ const toggleClicked = () => {
   }
 }
 
+const checkCurrentMenuItem = () => {
+  const path = window.location.pathname;
+  let currentLinkId = '';
+
+  if (path.includes('home')) {
+    currentLinkId = 'home-link-wrapper';
+  }
+
+  if (path.includes('preston')) {
+    currentLinkId = 'preston-link-wrapper';
+  }
+
+  if (path.includes('soda-springs')) {
+    currentLinkId = 'soda-springs-link-wrapper';
+  }
+
+  if (path.includes('fish-haven')) {
+    currentLinkId = 'fish-haven-link-wrapper';
+  }
+
+  if (path.includes('storm-center')) {
+    currentLinkId = 'storm-center-link-wrapper';
+  }
+
+  if (path.includes('gallery')) {
+    currentLinkId = 'gallery-link-wrapper';
+  }
+
+  const element = document.getElementById(currentLinkId);
+  if (element) {
+    element.setAttribute('class', 'current');
+  }
+}
+
+const checkBanner = () => {
+  const day = new Date().getDay();
+
+  // friday
+  if (day === 5) {
+    const banner = document.getElementById('banner');
+    banner.setAttribute('style', 'display: block')
+  }
+}
+
 (() => {
   const menu = document.getElementById('menu');
   if (menu) {
     menu.addEventListener('click', toggleClicked);
   }
+
+  checkCurrentMenuItem();
+  checkBanner();
 })();

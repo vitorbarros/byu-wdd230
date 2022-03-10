@@ -1,3 +1,15 @@
+.friday-banner {
+  background-color: var(--black);
+  padding: 15px;
+  display: none;
+}
+
+.friday-banner p {
+  margin: 0;
+  text-align: center;
+  color: var(--white);
+}
+
 .title-container {
   margin: 0;
   border-radius: 0;
@@ -51,6 +63,15 @@ nav ul {
 nav ul li {
   transition: 0.3s;
   padding: 15px;
+  border-radius: 10px;
+}
+
+nav ul li.current {
+  background-color: var(--white);
+}
+
+nav ul li.current a {
+  color: var(--purple);
 }
 
 nav ul li a {
@@ -80,7 +101,47 @@ img {
   border-radius: 0;
 }
 
-.placeholder {
-  height: 300px;
+.internal-containers {
+  padding: 0 15px;
 }
 
+.forecast-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forecast-card {
+  background-color: var(--white);
+  text-align: center;
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--black);
+  margin: 0 5px;
+}
+
+.forecast-card p {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.forecast-card .card-title {
+  font-weight: 700;
+  background-color: var(--purple);
+  width: 100%;
+  color: var(--white);
+}
+
+.forecast-card img {
+  max-width: 60px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
