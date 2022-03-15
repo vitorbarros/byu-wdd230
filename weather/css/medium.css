@@ -14,4 +14,16 @@
   .forecast-card img {
     max-width: 40px;
   }
+
+  #large {
+    display: none;
+  }
+
+  #small {
+    display: none;
+  }
+
+  #medium {
+    display: block;
+  }
 }

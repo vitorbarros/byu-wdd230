@@ -38,4 +38,26 @@
     padding: 2px 0;
     font-size: 12px;
   }
+
+  #large {
+    display: none;
+  }
+
+  #small {
+    display: block;
+  }
+
+  #medium {
+    display: none;
+  }
+
+  figure .weather-summary {
+    left: 10px;
+    top: 10px;
+  }
+
+  figure .weather-summary p.title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
 }
