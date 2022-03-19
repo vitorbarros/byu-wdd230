@@ -206,3 +206,47 @@ figure .weather-summary p.title {
   font-weight: 700;
   margin-bottom: 20px;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-auto-rows: 300px;
+}
+
+.grid figure {
+  padding: 10px;
+}
+
+.grid figure img {
+  height: 200px;
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  transition:.5s;
+  cursor: pointer;
+}
+
+.grid figure img:hover {
+  transition:.5s;
+  box-shadow: 10px 10px 5px var(--purple);
+}
+
+.grid figure figcaption {
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.town-map {
+  max-width: 40%;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.town-map img {
+  max-width: 100%;
+  width: 100%;
+}

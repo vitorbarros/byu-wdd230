@@ -56,6 +56,40 @@ const checkBanner = () => {
   }
 }
 
+const initObserver = () => {
+  const images = document.querySelectorAll('[data-src]');
+  const options = {
+    threshold: 1,
+  };
+
+  const preloadImg = (img) => {
+    const src = img.getAttribute('data-src');
+
+    if (!src) {
+      return;
+    }
+
+    img.src = src;
+  }
+
+  const observer = (entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      preloadImg(entry.target);
+      obs.unobserve(entry.target);
+    })
+  }
+
+  const imgObserver = new IntersectionObserver(observer, options);
+
+  images.forEach((image) => {
+    imgObserver.observe(image);
+  });
+};
+
 (() => {
   const menu = document.getElementById('menu');
   if (menu) {
@@ -64,4 +98,5 @@ const checkBanner = () => {
 
   checkCurrentMenuItem();
   checkBanner();
+  initObserver();
 })();

@@ -60,4 +60,20 @@
     font-size: 20px;
     margin-bottom: 5px;
   }
+
+  .grid {
+    grid-template-columns: 250px;
+    grid-auto-rows: 200px;
+  }
+
+  .grid figure img {
+    height: 140px;
+    max-width: 220px;
+  }
+
+  .grid figure figcaption {
+    font-size: 17px;
+    margin: 5px 0;
+    text-align: center;
+  }
 }
