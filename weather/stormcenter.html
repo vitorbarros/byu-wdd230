@@ -64,75 +64,76 @@
 </nav>
 <main>
   <section class="container internal-containers">
-    <h2>Preston Idaho</h2>
-    <div>
-      <figure>
-        <img src="images/banner.jpeg" alt="Preston Idaho banner">
-        <div class="label-wrapper">
-          <p class="label" id="large">Large</p>
-          <p class="label" id="medium">Medium</p>
-          <p class="label" id="small">Small</p>
-        </div>
-
-        <div class="weather-summary">
-          <p class="title">Weather Summary</p>
-          <p>Currently: <strong><span id="temperature">38</span>F</strong></p>
-          <p>Wind Chill: <strong><span id="wind-chill">34</span> F</strong></p>
-          <p>High: <strong>41 F</strong></p>
-          <p>Humidity: <strong>50%</strong></p>
-          <p>Wind Speed: <strong><span id="wind-speed">5</span> mph</strong></p>
-          <p>Wind Chill Factor: <strong><span id="wind-chill-factor"></span></strong></p>
-        </div>
-      </figure>
-    </div>
-  </section>
-  <section class="container internal-containers">
-    <h3>5 day forecast</h3>
-    <div class="forecast-wrapper">
-      <div class="forecast-card">
-        <p class="card-title">Mon</p>
-        <img src="images/sun.png" alt="Sun">
-        <p class="card-subtitle">28 C</p>
+    <form action="thanks.html" method="get">
+      <div class="form-control">
+        <label for="full-name">Full Name</label>
+        <input type="text" required minlength="5" id="full-name" name="fullName">
       </div>
-      <div class="forecast-card">
-        <p class="card-title">Tue</p>
-        <img src="images/sun.png" alt="Sun">
-        <p class="card-subtitle">32 C</p>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" required id="email" name="fullName">
       </div>
-      <div class="forecast-card">
-        <p class="card-title">Wed</p>
-        <img src="images/sun.png" alt="Sun">
-        <p class="card-subtitle">34 C</p>
+      <div class="form-control">
+        <label for="phone-number">Phone Number</label>
+        <input type="text" required id="phone-number" name="phoneNumber">
       </div>
-      <div class="forecast-card">
-        <p class="card-title">Thu</p>
-        <img src="images/sun.png" alt="Sun">
-        <p class="card-subtitle">33 C</p>
+      <div class="form-control">
+        <label for="zip-code">Zip Code</label>
+        <input type="number" required id="zip-code" name="zipCode">
       </div>
-      <div class="forecast-card">
-        <p class="card-title">Fri</p>
-        <img src="images/sun.png" alt="Sun">
-        <p class="card-subtitle">25 C</p>
+      <div class="form-control">
+        <label for="storm-date">Storm Date</label>
+        <input type="date" required id="storm-date" name="stormDate">
       </div>
-    </div>
-  </section>
-  <section class="container internal-containers">
-    <h2>Preston Idaho</h2>
-    <p>
-      In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the northern end of the Cache Valley, stretching
-      across southeastern Idaho and northeastern Utah.
-      They founded a community in that location and named it Worm Creek,
-      but in 1881 changed it to Preston because leaders of the LDS Church in
-      Salt Lake City objected to the name "Worm Creek" being part of any church
-      congregation's name. The name Preston was suggested by a local member
-      to honor William B. Preston, who at the time was president of the LDS Church's Cache Stake.
-    </p>
-    <figure>
-      <img src="images/preston-idaho.jpeg" alt="Preston Idaho">
-      <figcaption>
-        Franklin Country Court House
-      </figcaption>
-    </figure>
+      <div class="form-control">
+        <label for="storm-type">Storm Type</label>
+        <select name="stormType" required id="storm-type">
+          <option></option>
+          <option>Fast Flood</option>
+          <option>Hail</option>
+          <option>Hurricane</option>
+          <option>Thunderstorm</option>
+          <option>Tornado</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label for="storm-severity">Storm Severity</label>
+        <input
+          type="range"
+          id="storm-severity"
+          name="stormSeverity"
+          value="1"
+          min="1"
+          max="10"
+          step="1">
+      </div>
+      <div class="form-control">
+        <label for="storm-region">Storm Region</label>
+        <select name="stormRegion" required id="storm-region">
+          <option disabled>Select Region ...</option>
+          <option>Preston</option>
+          <option>Soda Springs</option>
+          <option>Fish Haven</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label>User in-danger-zone</label>
+        <input type="radio" id="yes" name="userInDangerZone" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="maybe" name="userInDangerZone" value="maybe">
+        <label for="maybe">Maybe</label>
+        <input type="radio" id="no" name="userInDangerZone" value="no">
+        <label for="maybe">No</label>
+      </div>
+      <div class="form-control">
+        <label for="additional-information">Additional Information</label>
+        <textarea name="additionalInformation" id="additional-information" rows="5">
+        </textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </section>
 </main>
 <footer class="footer-container">
@@ -149,6 +150,5 @@
 
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/windchill.js"></script>
 </body>
 </html>
