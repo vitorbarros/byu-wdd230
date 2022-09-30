@@ -85,3 +85,8 @@ body {
   color: var(--white);
 }
 
+.container.site-map-image-wrapper img {
+  margin: 0 auto;
+  display: block;
+}
+
