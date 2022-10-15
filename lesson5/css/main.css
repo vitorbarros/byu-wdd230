@@ -1,0 +1,111 @@
+:root {
+  --black: #3F4045;
+  --white: #FFFFFF;
+  --black-light: #30292F;
+  --black-light-2: #413F54;
+  --purple: #5F5AA2;
+  --blue: #355691;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: var(--black);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-card {
+  max-width: 700px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--blue);
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form label {
+  font-size: 18px;
+  color: var(--purple);
+  margin: 0 20px 0 0;
+}
+
+.form input {
+  height: 35px;
+  box-shadow: none;
+  border: 1px solid var(--blue);
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.form button {
+  height: 35px;
+  box-shadow: none;
+  border: 1px solid var(--blue);
+  padding: 0 10px;
+  border-radius: 10px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+}
+
+.form-card .list-wrapper {
+  border: 1px solid var(--black-light);
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  align-self: center;
+  flex: 1;
+  margin-top: 30px;
+}
+
+.form-card .list-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex: 1
+}
+
+.form-card .list-wrapper ul li p {
+  font-size: 15px;
+  color: var(--black);
+  margin: 10px 0;
+}
+
+.form-card .list-wrapper ul li .list-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-card .list-wrapper ul li .list-item-wrapper button {
+  padding: 5px;
+  font-size: 10px;
+}
+
+.list {
+
+}
