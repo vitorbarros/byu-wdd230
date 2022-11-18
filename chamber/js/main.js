@@ -96,15 +96,20 @@ const fetchWeather = async () => {
   return Promise.reject('error while trying to fetch the weather api');
 }
 
-const appendResult = ({ main, weather }) => {
+const appendResult = ({ main, weather, wind }) => {
   const currentTemp = document.querySelector('#current-temp');
+  const currentCond = document.querySelector('#current-condition');
+  const windCond = document.querySelector('#wind-condition');
   const weatherIcon = document.querySelector('#weather-icon');
   const captionDesc = document.querySelector('figcaption');
 
-  currentTemp.innerHTML = `<p>${main.temp.toFixed(0)} F</p>`;
+  currentTemp.innerHTML = `${main.temp.toFixed(0)} F`;
+  windCond.innerHTML = `Wind speed: ${wind.speed}`;
 
   const iconsrc = `https://openweathermap.org/img/w/${weather[0].icon}.png`;
   const desc = weather[0].description;
+
+  currentCond.innerHTML = `Condition: ${desc}`;
 
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
