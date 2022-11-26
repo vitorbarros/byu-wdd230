@@ -40,6 +40,10 @@ const checkCurrentMenuItem = () => {
     currentLinkId = 'gallery-link-wrapper';
   }
 
+  if (path.includes('contact')) {
+    currentLinkId = 'contact-link-wrapper';
+  }
+
   const element = document.getElementById(currentLinkId);
   if (element) {
     element.setAttribute('class', 'current');
