@@ -16,24 +16,16 @@ const checkCurrentMenuItem = () => {
   const path = window.location.pathname;
   let currentLinkId = '';
 
-  if (path.includes('home')) {
+  if (path.includes('index')) {
     currentLinkId = 'home-link-wrapper';
   }
 
-  if (path.includes('preston')) {
-    currentLinkId = 'preston-link-wrapper';
+  if (path.includes('directory')) {
+    currentLinkId = 'directory-link-wrapper';
   }
 
-  if (path.includes('soda-springs')) {
-    currentLinkId = 'soda-springs-link-wrapper';
-  }
-
-  if (path.includes('fish-haven')) {
-    currentLinkId = 'fish-haven-link-wrapper';
-  }
-
-  if (path.includes('storm-center')) {
-    currentLinkId = 'storm-center-link-wrapper';
+  if (path.includes('join')) {
+    currentLinkId = 'join-link-wrapper';
   }
 
   if (path.includes('gallery')) {
