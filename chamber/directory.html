@@ -22,10 +22,39 @@
   <title>The Chamber Website</title>
 </head>
 <body>
-<header>
-  <h1>Chamber of Commerce - Directory Page</h1>
+<header class="title-container">
+  <div class="container">
+    <div class="header">
+      <div class="header-content-wrapper">
+        <img src="images/img.png" alt="The Weather Website Logo">
+        <h1 class="page-title">The Weather Website</h1>
+      </div>
+      <button type="button" class="menu-toggle" id="menu">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  </div>
 </header>
+<nav class="menu" id="menu-list-taggable">
+  <div class="container">
+    <ul class="menu-li">
+      <li id="home-link-wrapper">
+        <a href="index.html">Home</a>
+      </li>
+      <li id="soda-springs-link-wrapper">
+        <a href="directory.html">Directory</a>
+      </li>
+      <li id="fish-haven-link-wrapper">
+        <a href="join.html">Join</a>
+      </li>
+      <li id="gallery-link-wrapper">
+        <a href="gallery-7.html">Gallery</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <main class="directory">
+  <h1>Directory Page</h1>
   <div class="cards grid"></div>
 </main>
 
