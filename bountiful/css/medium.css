@@ -1,0 +1,45 @@
+@media (max-width: 1007px) {
+  img {
+    max-width: 100px;
+  }
+  .page-title {
+    font-size: 30px;
+  }
+  .forecast-card {
+    max-width: 120px;
+    width: 100%;
+    height: 120px;
+  }
+
+  .forecast-card img {
+    max-width: 40px;
+  }
+
+  #large {
+    display: none;
+  }
+
+  #small {
+    display: none;
+  }
+
+  #medium {
+    display: block;
+  }
+
+  .grid {
+    grid-template-columns: 250px 250px;
+    grid-auto-rows: 200px;
+  }
+
+  .grid figure img {
+    height: 140px;
+    max-width: 220px;
+  }
+
+  .grid figure figcaption {
+    font-size: 17px;
+    margin: 5px 0;
+    text-align: center;
+  }
+}

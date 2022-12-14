@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Ferrari",
+    "since": "23 December 1805",
+    "death": "27 June 1844",
+    "imageurl": "https://www.carlogos.org/car-logos/ferrari-logo-750x1100.png"
+  },
+  {
+    "name": "Porsche",
+    "since": "01 June 1801",
+    "death": "29 August 1877",
+    "imageurl": "https://www.carlogos.org/car-logos/porsche-logo-2100x1100.png"
+  },
+  {
+    "name": "Lamborghini",
+    "since": "01 November 1808",
+    "death": "25 July 1887",
+    "imageurl": "https://www.carlogos.org/car-logos/lamborghini-logo-1000x1100.png"
+  },
+  {
+    "name": "Subaru",
+    "since": "01 March 1807",
+    "death": "02 September 1898",
+    "imageurl": "https://www.carlogos.org/car-logos/subaru-logo-2003.png"
+  },
+  {
+    "name": "Alfa Romeo",
+    "since": "03 April 1814",
+    "death": "19 October 1901",
+    "imageurl": "https://www.carlogos.org/logo/Alfa-Romeo-logo-2015-1920x1080.png"
+  },
+  {
+    "name": "Chevrolet",
+    "since": "12 November 1838",
+    "death": "19 November 1918",
+    "imageurl": "https://www.carlogos.org/logo/Chevrolet-logo-2013-2560x1440.png"
+  },
+  {
+    "name": "Mitsubishi",
+    "since": "22 November 1856",
+    "death": "14 May 1945",
+    "imageurl": "https://www.carlogos.org/logo/Mitsubishi-logo-2000x2500.png"
+  },
+  {
+    "name": "Volkswagen",
+    "since": "4 April 1870",
+    "death": "4 April 1951",
+    "imageurl": "https://www.carlogos.org/logo/Volkswagen-logo-2019-1500x1500.png"
+  },
+  {
+    "name": "Fiat",
+    "since": "8 September 1873",
+    "death": "18 January 1970",
+    "imageurl": "https://www.carlogos.org/logo/Fiat-logo-2006-1920x1080.png"
+  }
+]

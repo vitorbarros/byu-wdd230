@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/small.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Vitor Monteiro">
+  <meta name="description" content="purpose of this site is to
+      create an engaged community across the world to discuss how the weather is changing drastically
+      and how that could affect the humanity.">
+
+  <title>The Chamber Website</title>
+</head>
+<body>
+<header class="title-container">
+  <div class="container">
+    <div class="header">
+      <div class="header-content-wrapper">
+        <img src="images/bountiful-logo.png" alt="The Weather Website Logo">
+        <h1 class="page-title">Bountiful</h1>
+      </div>
+      <button type="button" class="menu-toggle" id="menu">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="menu" id="menu-list-taggable">
+  <div class="container">
+    <ul class="menu-li">
+      <li id="home-link-wrapper">
+        <a href="index.html">Home</a>
+      </li>
+      <li id="fresh-link-wrapper">
+        <a href="fresh.html">Fresh</a>
+      </li>
+      <li id="about-link-wrapper">
+        <a href="about.html">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <section class="container internal-containers">
+    <h1>Make your own mix</h1>
+  </section>
+  <section class="container internal-containers">
+    <form action="thanks.html" method="get">
+      <div class="form-control">
+        <label for="full-name">First Name</label>
+        <input type="text" required minlength="5" id="full-name" name="fullName">
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" required id="email" name="fullName">
+      </div>
+      <div class="form-control">
+        <label for="phone-number">Phone Number</label>
+        <input type="text" required id="phone-number" name="phoneNumber">
+      </div>
+      <div class="form-control">
+        <label for="fruits">Fruits</label>
+        <select name="fruits" required id="fruits" multiple>
+          <option disabled>Select As many as you want ...</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+</main>
+<footer class="footer-container">
+  <div class="container">
+    <p><span id="footer-year"></span> | Vitor Monteiro | Sao Paulo | <a href="https://www.byui.edu/online">BYU
+      Online Learning</a></p>
+    <p>Last modified: <span id="last-modified"></span></p>
+  </div>
+</footer>
+
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
